@@ -1,8 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
-TOKEN = 'INSERISCI_IL_TUO_TOKEN_QUI'
-
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 WELCOME_MESSAGE = """
 👋 Benvenutə nel gruppo!
 
